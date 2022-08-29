@@ -1,0 +1,136 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 3em; /* em = multiplier of default */
+    font-weight: 700;
+}
+
+h2 {
+    color: #003b63;
+    font-family: sans-serif;
+    font-size: 4.5em;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+a {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+li {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: left;
+}
+
+header {
+    background-color: #ffc300;
+    height: 100px;
+    margin: 0;
+    position: fixed; /* makes the header stay at the top of the screen as the user scrolls */
+    width: 100%;
+    z-index: 999; /* ensures that the header stays on top of all the other elements */
+}
+
+header img {
+    float: left; /* places the logo on the left side of the header */
+    height: 100px;
+    left: 20px;
+    position: relative; /* allows the logo to be moved from its original position (left: 20px) */
+    z-index: 999;
+}
+
+header li {
+    line-height: 100px; /* vertically centres the links in the header */
+}
+
+nav ul {
+    float: right; /* places the links on the right side of the header */
+    list-style-type: none; /* removes the bullet points */
+    margin: 0;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 10px; /* space between the nav links and the right edge of the screen */
+    padding-top: 0px; /* set other paddings to zero to ensure that the links are centred correctly */
+}
+
+nav li {
+    display: inline-block; /* displays the links in a line */
+}
+
+nav li a {
+    color: white;
+    font-weight: 700;
+    padding: 14px 16px;
+    text-decoration: none; /* removes the underlines of the links */
+}
+
+nav li a:hover {
+    background-color: #ff9d00; /* links change colour when cursor hovers over them */
+}
+
+.button {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    display: inline-block; /* places buttons in a line */
+    font-size: 1.2em;
+    margin: 30px 5px;
+    min-width: 150px; /* defines minimum width so that there is enough room for the text */
+    padding: 15px 15px;
+    text-decoration: none; /* removes underlines */
+}
+
+.button:hover { /* button changes colour when cursor hovers over button */
+
+}
+
+#full-width {
+    width: 100%;
+}
+
+#intro {
+    background: black url(../img/general/mountain_view_dark.jpg) no-repeat center;
+    /* no-repeat - image not repeated in container
+    center - centres the image */
+    background-size: cover; /* sets image size to cover entire container */
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px; /* extra 100px to compensate for header */
+}
+
+#intro-block-home {
+    background-color: #001e80bf;
+    color: #ffffff;
+    float: left;
+    padding: 20px;
+    width: 40%;
+}
+
+#intro-block-gallery {
+    color: #ffffff;
+    float: left;
+    padding: 20px;
+    width: 40%;
+}
+
+#intro-block-chalets {
+    background-color: #001e80bf;
+    color: #ffffff;
+    float: right;
+    padding: 20px;
+    width: 40%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <!--import custom fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--choose font later-->
+
+        <!--import stylesheets-->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/styles.css">
+
+        <!--import fancybox to create photo galleries-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--jquery library-->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/> <!--stylesheet for jquery fancybox-->
+        <script
+        src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> <!--jquery fancybox-->
+        
+        <title>Maunga Club</title>
+    </head>
+
+    <!--REMEMBER TO ADD ALT TEXT TO GALLERIES AS WELL (add alt inside img tag)-->
+
+    <header>
+        <img src="img/general/Maunga_Club_white.png" alt="Maunga Club logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="chalets.html">CHALETS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <section id="intro">
+        <div id="full-width"> <!--div with width 100% to arrange blocks correctly-->
+            <div id="intro-block-home">
+                <h1>Welcome to Maunga Club!</h1>
+                <p>Here at Maunga Club, we offer snow chalets and ski chalets to anyone
+                    interested in skiing or snowboarding down a mountain. All of our 
+                    chalets are on the mountain, so anyone can ski from and to the chalets. 
+                    The mountain has 550 metres of skiing/snowboarding area and the
+                    longest ski/snowboard season in all of New Zealand. If you are interested
+                    in staying at our chalets, please visit our contact page to found
+                    out more about how to join.
+                </p>
+                <a href="contact.html" class="button">Contact us!</a>
+            </div>
+        </div>
+
+        <div id="full-width">
+            <div id="intro-block-gallery">
+                <a data-fancybox="intro-gallery" href="img/kakapo/cabin_exterior.jpg"> <img src="img/kakapo/cabin_exterior_thumb.jpg"></a>
+                <a data-fancybox="intro-gallery" href="img/pukeko/chalet_exterior.jpg"> <img src="img/pukeko/chalet_exterior_thumb.jpg"></a>
+                <a data-fancybox="intro-gallery" href="img/kereru/cabin_exterior.jpg"> <img src="img/kereru/cabin_exterior_thumb.jpg"></a>
+            </div>
+
+            <div id="intro-block-chalets">
+                <h1>Chalets</h1>
+            </div>
+        </div>
+        </section>
+    
+    </body>
+
+    <footer>
+        <p>Caleb Tran, 2022</p>
+    </footer>
+</html>
