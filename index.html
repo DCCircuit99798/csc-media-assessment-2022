@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!--import custom fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!--choose font later-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
         <!--import stylesheets-->
         <link rel="stylesheet" href="styles/normalize.css">
@@ -22,8 +23,6 @@
         <title>Maunga Club</title>
     </head>
 
-    <!--REMEMBER TO ADD ALT TEXT TO GALLERIES AS WELL (add alt inside img tag)-->
-
     <header>
         <img src="img/general/Maunga_Club_white.png" alt="Maunga Club logo">
         <nav>
@@ -37,7 +36,7 @@
 
     <body>
         <section id="intro">
-        <div id="full-width"> <!--div with width 100% to arrange blocks correctly-->
+        <div class="two-columns"> <!--div with width 100% to allow divs to display correctly-->
             <div id="intro-block-home">
                 <h1>Welcome to Maunga Club!</h1>
                 <p>Here at Maunga Club, we offer snow chalets and ski chalets to anyone
@@ -50,17 +49,26 @@
                 </p>
                 <a href="contact.html" class="button">Contact us!</a>
             </div>
+
+            <div>
+            </div>
         </div>
 
-        <div id="full-width">
+        <div class="two-columns">
             <div id="intro-block-gallery">
-                <a data-fancybox="intro-gallery" href="img/kakapo/cabin_exterior.jpg"> <img src="img/kakapo/cabin_exterior_thumb.jpg"></a>
-                <a data-fancybox="intro-gallery" href="img/pukeko/chalet_exterior.jpg"> <img src="img/pukeko/chalet_exterior_thumb.jpg"></a>
-                <a data-fancybox="intro-gallery" href="img/kereru/cabin_exterior.jpg"> <img src="img/kereru/cabin_exterior_thumb.jpg"></a>
+                <a data-fancybox="intro-gallery" href="img/kakapo/cabin_exterior.jpg"> <img src="img/kakapo/cabin_exterior_thumb.jpg" alt="Kākāpo cabin exterior"></a>
+                <a data-fancybox="intro-gallery" href="img/pukeko/chalet_exterior.jpg"> <img src="img/pukeko/chalet_exterior_thumb.jpg" alt="Pūkeko cabin exterior"></a>
+                <a data-fancybox="intro-gallery" href="img/kereru/cabin_exterior.jpg"> <img src="img/kereru/cabin_exterior_thumb.jpg" alt="Kererū cabin exterior"></a>
             </div>
 
             <div id="intro-block-chalets">
                 <h1>Chalets</h1>
+                <p>Click on the images to view them in higher detail. Only Club members can access the chalets, 
+                    and all chalet bookings must be from Friday to Sunday. Chalets offer shared accommodation for
+                    between 6 and 40 people per chalet. For more information about our chalets, please visit our 
+                    Chalets page.
+                    </p>
+                <a href="chalets.html" class="button">View more</a>
             </div>
         </div>
         </section>

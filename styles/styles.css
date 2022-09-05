@@ -1,35 +1,35 @@
 h1 {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3em; /* em = multiplier of default */
     font-weight: 700;
 }
 
 h2 {
     color: #003b63;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 4.5em;
 }
 
 h3 {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     font-weight: 700;
 }
 
 p {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 400;
 }
 
 a {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 400;
 }
 
 li {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 400;
     text-align: left;
@@ -90,14 +90,20 @@ nav li a:hover {
     min-width: 150px; /* defines minimum width so that there is enough room for the text */
     padding: 15px 15px;
     text-decoration: none; /* removes underlines */
+    text-align: center;
 }
 
 .button:hover { /* button changes colour when cursor hovers over button */
-
+    background-color: #004680bf;
 }
 
-#full-width {
-    width: 100%;
+.two-columns {
+    display: grid; /* displays each div in a separate column */
+    grid-gap: 1rem; /* space between columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
+    /* auto-fit - automatically changes columns to rows if there isn't enough space for text */
+    margin: 0 auto;
+    padding: 16px;
 }
 
 #intro {
@@ -105,7 +111,7 @@ nav li a:hover {
     /* no-repeat - image not repeated in container
     center - centres the image */
     background-size: cover; /* sets image size to cover entire container */
-    margin-top: 0px;
+    margin: 0px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -115,22 +121,45 @@ nav li a:hover {
 #intro-block-home {
     background-color: #001e80bf;
     color: #ffffff;
-    float: left;
     padding: 20px;
-    width: 40%;
 }
 
 #intro-block-gallery {
     color: #ffffff;
-    float: left;
     padding: 20px;
-    width: 40%;
+}
+
+#intro-block-gallery img {
+    border: 2px solid #ffffff;
+    width: 30%;
 }
 
 #intro-block-chalets {
     background-color: #001e80bf;
     color: #ffffff;
-    float: right;
     padding: 20px;
-    width: 40%;
+}
+
+#kakapo-heading {
+    background: black url(../img/general/asdfghjkl.jpg) no-repeat center; /* FIND IMAGE TO USE FOR THIS */
+    /* no-repeat - image not repeated in container
+    center - centres the image */
+    background-size: cover; /* sets image size to cover entire container */
+    color: #ffffff;
+    height: 100px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+footer {
+    background-color: #00c1cf;
+    height: 100px;
+    line-height: 100px; /* vertically centre text */
+    margin-top: -20px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
 }
