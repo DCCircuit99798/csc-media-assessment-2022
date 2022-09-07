@@ -118,7 +118,7 @@ nav li a:hover {
     padding-top: 120px; /* extra 100px to compensate for header */
 }
 
-#intro-block-home {
+.text-block {
     background-color: #001e80bf;
     color: #ffffff;
     padding: 20px;
@@ -131,12 +131,6 @@ nav li a:hover {
 #intro-block-gallery img {
     border: 2px solid #ffffff;
     width: 48%; /* slightly less than 50% to account for padding */
-}
-
-#intro-block-chalets {
-    background-color: #001e80bf;
-    color: #ffffff;
-    padding: 20px;
 }
 
 .three-columns { /* for displaying info on each chalet */
@@ -156,6 +150,18 @@ nav li a:hover {
 .chalet-gallery img {
     border: 2px solid #003b63;
     width: 48%; /* slightly less than 50% to account for padding */
+}
+
+#contact {
+    background: black url(../img/kakapo/cabin_view_bg.jpg) no-repeat center;
+    /* no-repeat - image not repeated in container
+    center - centres the image */
+    background-size: cover; /* sets image size to cover entire container */
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px; /* extra 100px to compensate for header */
 }
 
 footer {
