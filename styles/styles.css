@@ -5,14 +5,8 @@ h1 {
 }
 
 h2 {
-    color: #003b63;
     font-family: 'Montserrat', sans-serif;
-    font-size: 4.5em;
-}
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 700;
 }
 
@@ -36,7 +30,7 @@ li {
 }
 
 header {
-    background-color: #ffc300;
+    background-color: #00c1cf;
     height: 100px;
     margin: 0;
     position: fixed; /* makes the header stay at the top of the screen as the user scrolls */
@@ -78,7 +72,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #ff9d00; /* links change colour when cursor hovers over them */
+    background-color: #11949d; /* links change colour when cursor hovers over them */
 }
 
 .button {
@@ -118,7 +112,15 @@ nav li a:hover {
     padding-top: 120px; /* extra 100px to compensate for header */
 }
 
-.text-block {
+.text-block-center { /* class for text blocks outside of two-columns or three-columns (to be centred) */
+    background-color: #001e80bf;
+    color: #ffffff;
+    margin: auto; /* centre the div on the screen */
+    padding: 20px;
+    width: 50%;
+}
+
+.text-block { /* class for text blocks inside two-columns or three-columns */
     background-color: #001e80bf;
     color: #ffffff;
     padding: 20px;
@@ -151,6 +153,10 @@ nav li a:hover {
 .chalet-gallery img {
     border: 2px solid #ffffff;
     width: 48%; /* slightly less than 50% to account for padding */
+}
+
+.chalet-gallery p {
+    text-align: center;
 }
 
 #kakapo {
