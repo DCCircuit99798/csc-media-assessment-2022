@@ -132,7 +132,7 @@ nav li a:hover {
 
 #intro-block-gallery img {
     border: 2px solid #ffffff;
-    width: 48%; /* slightly less than 50% to account for padding */
+    width: 32%; /* slightly less than 50% to account for padding */
 }
 
 .three-columns { /* for displaying info on each chalet */
