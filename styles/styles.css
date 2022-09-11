@@ -1,3 +1,9 @@
+body {
+    background-color: #00c1cf;
+    /* makes the background colour of the page cyan if the
+    content is not large enough to fill the page */
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3em; /* em = multiplier of default */
@@ -91,7 +97,7 @@ nav li a:hover {
     background-color: #004680bf;
 }
 
-.two-columns {
+.two-columns { /* class for each chalet on chalets page */
     display: grid; /* displays each div in a separate column */
     grid-gap: 1rem; /* space between columns */
     grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
@@ -112,7 +118,7 @@ nav li a:hover {
     padding-top: 120px; /* extra 100px to compensate for header */
 }
 
-.text-block-center { /* class for text blocks outside of two-columns or three-columns (to be centred) */
+.text-block-center { /* class for text blocks outside of two-columns (to be centred) */
     background-color: #001e80bf;
     color: #ffffff;
     margin: auto; /* centre the div on the screen */
@@ -120,7 +126,7 @@ nav li a:hover {
     width: 50%;
 }
 
-.text-block { /* class for text blocks inside two-columns or three-columns */
+.text-block { /* class for text blocks inside two-columns */
     background-color: #001e80bf;
     color: #ffffff;
     padding: 20px;
@@ -133,16 +139,6 @@ nav li a:hover {
 #intro-block-gallery img {
     border: 2px solid #ffffff;
     width: 32%; /* slightly less than 50% to account for padding */
-}
-
-.three-columns { /* for displaying info on each chalet */
-    display: grid; /* displays each div in a separate column */
-    grid-gap: 1rem; /* space between columns */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 0.33fr));
-    height: 350px;
-    /* auto-fit - automatically changes columns to rows if there isn't enough space for text */
-    margin: 0 auto;
-    padding: 20px;
 }
 
 .chalet-gallery {
@@ -211,6 +207,9 @@ nav li a:hover {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 120px; /* extra 100px to compensate for header */
+    display: flex;
+    flex-flow: column;
+    height: 100%;
 }
 
 footer {
