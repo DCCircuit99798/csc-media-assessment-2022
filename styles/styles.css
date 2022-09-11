@@ -207,9 +207,6 @@ nav li a:hover {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 120px; /* extra 100px to compensate for header */
-    display: flex;
-    flex-flow: column;
-    height: 100%;
 }
 
 footer {
